@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color-bg-portfolio;
+}
+.footer__wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $content-width;
+    padding: 22px 0;
+}
+
+.ico-networks {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.ico-networks__link {
+    padding-right: 8px;
+}

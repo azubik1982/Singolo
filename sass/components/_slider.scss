@@ -1,0 +1,20 @@
+.slider__wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.slide-1 {
+    width: 1020px;
+    height: 588px;
+    background-color: $color-bg-slider1;
+    border-bottom: 6px solid $color-border-slider1;
+
+}
+
+.slide-2 {
+    width: 1020px;
+    height: 594px;
+    background-color: $color-bg-slider2;
+}
