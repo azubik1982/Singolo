@@ -25,11 +25,23 @@
     width: 100%;
     height: auto;
 }
-button {
+.button_borderd {
     font-family: 'Lato', sans-serif;
-    border: 1px solid #BBBBBB;
+    color: $color-border;
+    border: 1px solid $color-border;
     box-sizing: border-box;
     border-radius: 5px;
+    background-color: $color-bg-portfolio;
+    cursor: pointer;
+}
+
+.button_borderd:hover {
+    color: $color-border-hover;
+}
+
+.button_borderd:active {
+    color: $color-border-hover;
+    border-color: $color-border-hover;
 }
 
 .button_portfolio {

@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-size: 1, 6rem;
+  font-size: 1.6rem;
   color: #767e9e;
 }
 
@@ -19,6 +19,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -65,17 +66,32 @@ body {
 }
 
 .header__wrapper {
+  padding: 29px 0 35px 0;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.site_name__wrapper {
+  margin: 0;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
 .site__name {
   color: #FFFFFF;
 }
 
+.star {
+  color: #f06c64;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 .navigation {
+  padding: 15px 0 0 0;
   display: flex;
   width: 375px;
   justify-content: space-between;
@@ -85,6 +101,15 @@ body {
   line-height: 14px;
   text-align: right;
   letter-spacing: -0.035em;
+  transition: all 0.3s;
+}
+.navigation a {
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.navigation a:hover {
+  color: #f06c64;
 }
 
 .navigation :first-child {
@@ -142,11 +167,23 @@ body {
   height: auto;
 }
 
-button {
+.button_borderd {
   font-family: "Lato", sans-serif;
-  border: 1px solid #BBBBBB;
+  color: #767e9e;
+  border: 1px solid #767e9e;
   box-sizing: border-box;
   border-radius: 5px;
+  background-color: #2d303a;
+  cursor: pointer;
+}
+
+.button_borderd:hover {
+  color: #DEDEDE;
+}
+
+.button_borderd:active {
+  color: #DEDEDE;
+  border-color: #DEDEDE;
 }
 
 .button_portfolio {
