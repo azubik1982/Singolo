@@ -6,17 +6,24 @@
 .our-service__title {
     margin: 0;
     padding-top: 59px;
+    font-size: 30px;
+    line-height: 36px;
 }
 
 .our-service__text {
     margin: 0;
+    line-height: 30px;
     padding-top: 12px;
     padding-bottom: 60px;
+    text-align: justify;
 }
 
 .wrapper_layout__text {
     margin: 0;
     padding-left: 12px;
+    line-height: 22px;
+    text-align: justify;
+    overflow: hidden;
 }
 
 .layout__name {
@@ -26,6 +33,8 @@
 .layout__description {
     margin: 0;
     font-size: 1.2rem;
+    text-align: justify;
+    overflow: hidden;
 }
 
 .layout-2-span-3-column__wrapper {

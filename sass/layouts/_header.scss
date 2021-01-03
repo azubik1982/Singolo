@@ -47,7 +47,11 @@
         cursor: pointer;
     }
 
-    a:hover {
+    a.active {
+        color: #f06c64;
+    }
+
+    a:not(.active):hover {
         color:  #f06c64;
     }
 }
@@ -55,7 +59,3 @@
 .navigation :first-child {
     list-style: none;
 }
-
-// .navigation__link {
-//     cursor: pointer;
-// }

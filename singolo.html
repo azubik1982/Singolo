@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="/node_modules/normalize.css/normalize.css" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
-
+    <script async src="/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,9 +19,9 @@
           </div>
         </div>
         <nav class="header__navigation" id="home">
-          <ul class="navigation">
+          <ul class="navigation" id="MENU">
             <li class="navigation__link">
-              <a href="#home">HOME</a>
+              <a class="active" href="#home">HOME</a>
             </li>
             <li class="navigation__link">
               <a href="#services">SERVICES</a>
@@ -53,21 +53,27 @@
           <p class="our-service__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <div class="wrapper layout-2-span-3-column__wrapper">
             <div class="wrapper_layout">
-              <img src="img/svg/items/services-item-1.svg" alt="pencil">
+              <div class="our-services__img">
+                <img src="img/svg/items/services-item-1.svg" alt="pencil">
+              </div>
               <div class="wrapper_layout__text">
                 <h3 class="layout__name">Custom Design</h3>
                 <p class="layout__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
               </div>
             </div>
             <div class="wrapper_layout">
-              <img src="img/svg/items/services-item-2.svg" alt="lamp">
+              <div class="our-services__img">
+                <img src="img/svg/items/services-item-2.svg" alt="lamp">
+              </div>
               <div class="wrapper_layout__text">
                 <h3 class="layout__name">Inovative Ideas</h3>
                 <p class="layout__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
               </div>
             </div>
             <div class="wrapper_layout">
-              <img src="img/svg/items/services-item-3.svg" alt="heart">
+              <div class="our-services__img">
+                <img src="img/svg/items/services-item-3.svg" alt="heart">
+              </div>
               <div class="wrapper_layout__text">
                 <h3 class="layout__name">Love Is The Answer</h3>
                 <p class="layout__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
@@ -75,21 +81,27 @@
               </div>
             </div>
             <div class="wrapper_layout">
-              <img src="img/svg/items/services-item-4.svg" alt="s-phone">
+              <div class="our-services__img">
+                <img src="img/svg/items/services-item-4.svg" alt="s-phone">
+              </div>
               <div class="wrapper_layout__text">
                 <h3 class="layout__name">Responsive Layout</h3>
                 <p class="layout__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
               </div>
             </div>
             <div class="wrapper_layout">
-              <img src="img/svg/items/services-item-5.svg" alt="answer">
+              <div class="our-services__img">
+                <img src="img/svg/items/services-item-5.svg" alt="answer">
+              </div>
               <div class="wrapper_layout__text">
                 <h3 class="layout__name">24 / 7 Support</h3>
                 <p class="layout__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
               </div>
             </div>
             <div class="wrapper_layout">
-              <img src="img/svg/items/services-item-6.svg" alt="star">
+              <div class="our-services__img">
+                <img src="img/svg/items/services-item-6.svg" alt="star">
+              </div>
               <div class="wrapper_layout__text">
                 <h3 class="layout__name">Feel Like A Star</h3>
                 <p class="layout__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -104,7 +116,7 @@
           <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           <div class="button_portfolio">
             <span class="button_portfolio__item">
-              <button class="button_borderd">All</button>
+              <button class="button_borderd_active">All</button>
             </span>
             <span class="button_portfolio__item">
               <button class="button_borderd">Web Design</button>
@@ -116,44 +128,47 @@
               <button class="button_borderd">Artwork</button>
             </span>
           </div>
-          <ul class="portfolio_images">
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-1.png" alt="boat">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-2.png" alt="happyness">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-3.png" alt="space">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-4.png" alt="robot">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-5.png" alt="abstract-animals">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-6.png" alt="codding">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-7.png" alt="ufo">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-8.png" alt="chickens">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-9.png" alt="devil">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-10.png" alt="lettering">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-11.png" alt="monster">
-            </li>
-            <li class="portfolio_images__item">
-              <img src="img/portfolio/portfolio-12.png" alt="sadness">
-            </li>
-          </ul>
+          <div class="portfolio_images__wrapper">
+              <ul class="portfolio_images">
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-1.png" alt="boat">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-2.png" alt="happyness">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-3.png" alt="space">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-4.png" alt="robot">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-5.png" alt="abstract-animals">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-6.png" alt="codding">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-7.png" alt="ufo">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-8.png" alt="chickens">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-9.png" alt="devil">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-10.png" alt="lettering">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-11.png" alt="monster">
+                </li>
+                <li class="portfolio_images__item">
+                  <img src="img/portfolio/portfolio-12.png" alt="sadness">
+                </li>
+            </ul>
+          </div>
+
         </div>
       </section>
       <footer class="footer">
