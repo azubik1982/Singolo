@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>singolo</title>
-    <!-- <link rel="stylesheet" type="text/css" href="/node_modules/normalize.css/normalize.css" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
     <script async src="/script.js"></script>
@@ -13,10 +12,7 @@
     <header class="header">
       <div class="wrapper header__wrapper">
         <div class="site_name__wrapper">
-          <h2 class="site__name">SINGOLO</h2>
-          <div class="star">
-            *
-          </div>
+          <h1 class="site__name">SINGOLO <span class="star">*</span> </h1>
         </div>
         <nav class="header__navigation" id="home">
           <ul class="navigation" id="MENU">
@@ -41,15 +37,35 @@
     </header>
     <div class="slider">
       <div class="slider__wrapper">
-        <div class="slide-1">
+        <div class="slider__item">
+          <div class="slide-1">
+            <div class="phone_vertical">
+              <img src="/img/slide-1/phone-vertical/phone-vertical.svg" alt="phone-vertical">
+            </div>
+            <div class="phone_horizontal">
+              <img src="/img/slide-1/phone-horizontal/phone-horizontal.svg" alt="phone-horizontal">
+            </div>
+          </div>
         </div>
-        <div class="slide-2">
+        <div class="slider__item">
+          <div class="slide-2">
+            <div class="phone_vertical_left_right">
+              <div class="phone_vertical_left">
+                <img src="/img/slide-2/phone-vertical-left/slider-content-left.svg" alt="phone left">
+              </div>
+              <div class="phone_vertical_right">
+                <img src="/img/slide-2/phone-vertical-right/slider-content-right.svg" alt="phone right">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right" href="#" role="button"></a>
     </div>
       <section class="our-services">
         <div class="wrapper our-services__wrapper">
-          <h1 class="our-service__title" id="services">Our Services</h1>
+          <h2 class="our-service__title" id="services">Our Services</h2>
           <p class="our-service__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <div class="wrapper layout-2-span-3-column__wrapper">
             <div class="wrapper_layout">
@@ -112,7 +128,7 @@
       </section>
       <section class="portfolio">
         <div class="wrapper">
-          <h1 class="portfolio__title" id="portfolio">Portfolio</h1>
+          <h2 class="portfolio__title" id="portfolio">Portfolio</h2>
           <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           <div class="button_portfolio">
             <span class="button_portfolio__item">
@@ -177,7 +193,7 @@
             <p>© Copyright 2013</p>
           </div>
           <div class="social">
-            <ul class="ico-networks" id="contact">
+            <ul class="ico-networks">
               <li class="ico-networks__link">
                 <a href="#">
                   <img src="img/svg/social icons/ico-facebook.svg" alt="facebook">

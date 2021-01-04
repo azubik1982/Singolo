@@ -14,18 +14,19 @@
 
 .site_name__wrapper {
     margin: 0;
-    width: 40%;
+    padding: 0;
     display: flex;
     align-items: center;
 }
 
 .site__name {
+    margin: 0;
     color: #FFFFFF;
 }
 
 .star {
     color:  #f06c64;
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     font-weight: bold;
 }
 

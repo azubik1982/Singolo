@@ -23,8 +23,8 @@ h2 {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.5rem;
-  line-height: 30px;
+  font-size: 3rem;
+  line-height: 36px;
   letter-spacing: -0.03em;
   color: #666d89;
 }
@@ -75,18 +75,19 @@ body {
 
 .site_name__wrapper {
   margin: 0;
-  width: 40%;
+  padding: 0;
   display: flex;
   align-items: center;
 }
 
 .site__name {
+  margin: 0;
   color: #FFFFFF;
 }
 
 .star {
   color: #f06c64;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -140,6 +141,7 @@ body {
 
 .ico-networks__link {
   padding-right: 8px;
+  cursor: pointer;
 }
 
 .portfolio {
@@ -212,8 +214,6 @@ body {
 .our-service__title {
   margin: 0;
   padding-top: 59px;
-  font-size: 30px;
-  line-height: 36px;
 }
 
 .our-service__text {
@@ -257,24 +257,98 @@ body {
   justify-content: space-between;
 }
 
-.slider__wrapper {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  width: fit-content;
-}
-
 .slide-1 {
   width: 1020px;
   height: 588px;
   background-color: #f06c64;
   border-bottom: 6px solid #EA676B;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .slide-2 {
   width: 1020px;
   height: 594px;
   background-color: #648bf0;
+}
+
+.phone_vertical_left_right {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  margin-left: 251px;
+  margin-right: 251px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider1-content {
+  display: inline-block;
+  position: relative;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  border-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.slider__control_left {
+  left: 0;
+  padding-left: 29px;
+}
+
+.slider__control_right {
+  right: 0;
+  padding-right: 27px;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("/img/svg/slider-arows/arrow-left.svg");
+}
+
+.slider__control_right::before {
+  background-image: url("/img/svg/slider-arows/arrow-right.svg");
+}
+
+.slider__item > div {
+  line-height: 250px;
+  font-size: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
