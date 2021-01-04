@@ -1,3 +1,5 @@
+// Styles for Slide-Red-1
+
 .slide-1 {
     width: 1020px;
     height: 588px;
@@ -8,27 +10,39 @@
     justify-content: space-around;
 }
 
+.phone_vertical {
+  display: inline-block;
+  line-height: 0;
+}
+
+.phone_horizontal {
+  display: inline-block;
+  line-height: 0;
+}
+
+// Styles for Slide-Blue-2
 
 .slide-2 {
     width: 1020px;
     height: 594px;
     background-color: $color-bg-slider2;
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
 
 .phone_vertical_left_right {
-    position: absolute;
-    top: 50%;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    margin-left: 251px;
-    margin-right: 251px;
+    justify-content: space-around;
+  }
 
+.phone_vertical {
+  display: inline-block;
+  line-height: 0;
 }
-
-
-
 
 .slider {
     position: relative;
@@ -61,7 +75,6 @@
 
   .slider__control:hover,
   .slider__control:focus {
-    border-color: $color-white;
     text-decoration: none;
   }
 
@@ -85,15 +98,14 @@
   }
 
   .slider__control_left::before {
-    background-image: url("/img/svg/slider-arows/arrow-left.svg");
+    background-image: url('img/svg/slider-arows/arrow-left.svg');
   }
 
   .slider__control_right::before {
-    background-image: url("/img/svg/slider-arows/arrow-right.svg");
+    background-image: url('img/svg/slider-arows/arrow-right.svg');
   }
 
   .slider__item>div {
     line-height: 250px;
     font-size: 100px;
-    // text-align: center;
   }

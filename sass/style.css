@@ -171,7 +171,8 @@ body {
 }
 
 .portfolio_images__item {
-  width: fit-content;
+  width: auto;
+  height: auto;
 }
 
 .button_borderd {
@@ -267,21 +268,36 @@ body {
   justify-content: space-around;
 }
 
+.phone_vertical {
+  display: inline-block;
+  line-height: 0;
+}
+
+.phone_horizontal {
+  display: inline-block;
+  line-height: 0;
+}
+
 .slide-2 {
   width: 1020px;
   height: 594px;
   background-color: #648bf0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .phone_vertical_left_right {
-  position: absolute;
-  top: 50%;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  margin-left: 251px;
-  margin-right: 251px;
+  justify-content: space-around;
+}
+
+.phone_vertical {
+  display: inline-block;
+  line-height: 0;
 }
 
 .slider {
@@ -315,7 +331,6 @@ body {
 
 .slider__control:hover,
 .slider__control:focus {
-  border-color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -339,11 +354,11 @@ body {
 }
 
 .slider__control_left::before {
-  background-image: url("/img/svg/slider-arows/arrow-left.svg");
+  background-image: url("img/svg/slider-arows/arrow-left.svg");
 }
 
 .slider__control_right::before {
-  background-image: url("/img/svg/slider-arows/arrow-right.svg");
+  background-image: url("img/svg/slider-arows/arrow-right.svg");
 }
 
 .slider__item > div {
