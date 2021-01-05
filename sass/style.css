@@ -258,6 +258,16 @@ body {
   justify-content: space-between;
 }
 
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
 .slide-1 {
   width: 1020px;
   height: 588px;
@@ -282,17 +292,32 @@ body {
   width: 1020px;
   height: 594px;
   background-color: #648bf0;
-  display: flex;
   position: relative;
   overflow: hidden;
 }
 
-.phone_vertical_left_right {
+.phone_vertical_top {
+  display: inline-block;
   height: 100%;
   width: 100%;
+  line-height: 0%;
+  position: absolute;
+  background-image: url("/img/slide-2/phone-vertical-top/slider-content-top.svg");
+  background-repeat: no-repeat;
+  z-index: 5;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+.phone_vertical_left_right {
+  height: 50%;
+  width: 50%;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  padding-left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .phone_vertical {
@@ -301,31 +326,21 @@ body {
 }
 
 .phone_vertical__left {
-  padding-left: 25%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/img/slide-2/phone-vertical-left/slider-content-left.svg");
+  z-index: 1;
 }
 
 .phone_vertical__right {
-  padding-right: 25%;
-}
-
-.slider {
-  position: relative;
-  overflow: hidden;
-}
-
-.slider__wrapper {
-  display: flex;
-  transition: transform 0.6s ease;
-}
-
-.slider__item {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.slider1-content {
   display: inline-block;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/img/slide-2/phone-vertical-right/slider-content-right.svg");
+  z-index: 1;
 }
 
 .slider__control {
@@ -363,15 +378,15 @@ body {
 
 .slider__control_left::before {
   background-image: url("/img/svg/slider-arows/arrow-left.svg");
+  z-index: 5;
+}
+
+.slider__control_left::before:hover {
+  background-color: aliceblue;
 }
 
 .slider__control_right::before {
   background-image: url("/img/svg/slider-arows/arrow-right.svg");
-}
-
-.slider__item > div {
-  line-height: 250px;
-  font-size: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

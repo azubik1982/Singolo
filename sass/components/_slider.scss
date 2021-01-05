@@ -1,3 +1,20 @@
+// Styles for Slider-block
+
+.slider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+
+  // .slider__item {
+  //   position: relative;
+  //   overflow: hidden;
+  // }
+
 // Styles for Slide-Red-1
 
 .slide-1 {
@@ -11,13 +28,13 @@
 }
 
 .phone_vertical {
-  display: inline-block;
-  line-height: 0;
+    display: inline-block;
+    line-height: 0;
 }
 
 .phone_horizontal {
-  display: inline-block;
-  line-height: 0;
+    display: inline-block;
+    line-height: 0;
 }
 
 // Styles for Slide-Blue-2
@@ -26,17 +43,33 @@
     width: 1020px;
     height: 594px;
     background-color: $color-bg-slider2;
-    display: flex;
     position: relative;
     overflow: hidden;
 }
 
-.phone_vertical_left_right {
+.phone_vertical_top {
+    display: inline-block;
     height: 100%;
     width: 100%;
+    line-height: 0%;
+    position: absolute;
+    background-image: url('/img/slide-2/phone-vertical-top/slider-content-top.svg');
+    background-repeat: no-repeat;
+    z-index: 5;
+    margin-left: 38%;
+    margin-top: 5%;
+}
+
+
+.phone_vertical_left_right {
+    height: 50%;
+    width: 50%;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding-left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
 .phone_vertical {
@@ -45,32 +78,24 @@
 }
 
 .phone_vertical__left {
-  padding-left: 25%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('/img/slide-2/phone-vertical-left/slider-content-left.svg');
+  z-index: 1;
 }
 
 .phone_vertical__right {
-  padding-right: 25%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('/img/slide-2/phone-vertical-right/slider-content-right.svg');
+  z-index: 1;
 }
 
-.slider {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slider__wrapper {
-    display: flex;
-    transition: transform 0.6s ease;
-  }
-
-  .slider__item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .slider1-content {
-    display: inline-block;
-    position: relative;
-  }
+  // Styles for control-buttons
 
   .slider__control {
     position: absolute;
@@ -107,13 +132,13 @@
 
   .slider__control_left::before {
     background-image: url('/img/svg/slider-arows/arrow-left.svg');
+    z-index: 5;
+  }
+
+  .slider__control_left::before:hover {
+    background-color: aliceblue;
   }
 
   .slider__control_right::before {
     background-image: url('/img/svg/slider-arows/arrow-right.svg');
-  }
-
-  .slider__item>div {
-    line-height: 250px;
-    font-size: 100px;
   }
