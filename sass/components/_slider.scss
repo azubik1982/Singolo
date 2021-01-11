@@ -38,7 +38,7 @@
 .slide-2 {
     width: 1020px;
     height: 594px;
-    background-image: url('img/slide-2/Slide-2.svg');
+    background-image: url('/img/slide-2/Slide-2.svg');
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -80,9 +80,9 @@
   }
 
   .slider__control_left::before {
-    background-image: url('img/svg/slider-arows/arrow-left.svg');
+    background-image: url('/img/svg/slider-arows/arrow-left.svg');
   }
 
   .slider__control_right::before {
-    background-image: url('img/svg/slider-arows/arrow-right.svg');
+    background-image: url('/img/svg/slider-arows/arrow-right.svg');
   }
