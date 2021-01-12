@@ -1,14 +1,14 @@
-﻿@import "abstract/constants";
-@import "base/base";
+﻿@import "abstract/constants.scss";
+@import "base/base.scss";
 
 //Layouts
-@import "layouts/wrapper";
-@import "layouts/body";
-@import "layouts/header";
-@import "layouts/footer";
+@import "layouts/wrapper.scss";
+@import "layouts/body.scss";
+@import "layouts/header.scss";
+@import "layouts/footer.scss";
 
 
 //Components
-@import "components/portfolio";
-@import "components/our-services";
-@import "components/slider";
+@import "components/portfolio.scss";
+@import "components/our-services.scss";
+@import "components/slider.scss";
