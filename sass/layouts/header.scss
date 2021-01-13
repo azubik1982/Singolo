@@ -5,7 +5,8 @@
 }
 
 .header__wrapper {
-    padding: 29px 0 35px 0;
+    height: 89px;
+    // padding: 29px 0 35px 0;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -29,6 +30,8 @@
     font-size: 3.0rem;
     font-weight: bold;
 }
+
+// navigation-Menu
 
 .navigation {
     padding: 15px 0 0 0;

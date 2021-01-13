@@ -7,6 +7,13 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
+// menu-portfolio
+
+PORTFOLIO.addEventListener('click', (event) => {
+  PORTFOLIO.querySelectorAll('button').forEach(el => el.classList.remove('button_borderd_active'));
+    event.target.classList.add('button_borderd_active');
+});
+
 // slider-skript
 
 var multiItemSlider = (function () {
