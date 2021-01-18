@@ -53,12 +53,19 @@ ul {
 }
 
 body {
+  position: relative;
   background-color: ​ #f2f2f2;
   margin: auto;
   padding: 0;
 }
 
 .header {
+  width: 100%;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
   background-color: #2D303A;
   color: #FFFFFF;
   border-bottom: 6px solid #323746;
@@ -325,6 +332,8 @@ body {
 
 .slider__control {
   position: absolute;
+  left: 50%;
+  right: 50%;
   top: 50%;
   display: flex;
   align-items: center;
