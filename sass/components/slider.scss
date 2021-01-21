@@ -56,26 +56,25 @@
 
   // Styles for control-buttons
 
-  .slider__control {
+  .slider_control {
     position: absolute;
-    // height: inherit;
-    // width: inherit;
-    width: 1020px;
+    width: 92%;
+    right: 4%;
     top: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:inherit;
+    justify-content: space-between;
     transform: translateY(-50%);
   }
 
   .slider__control_left {
     left: 0;
-    padding-left: 40px;
+    // padding-left: 40px;
   }
 
   .slider__control_right {
     right: 0;
-    padding-right: 40px;
+    // padding-right: 40px;
   }
 
   .slider__control::before {

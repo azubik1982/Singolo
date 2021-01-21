@@ -330,25 +330,23 @@ body {
   overflow: hidden;
 }
 
-.slider__control {
+.slider_control {
   position: absolute;
-  left: 50%;
-  right: 50%;
+  width: 92%;
+  right: 4%;
   top: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: inherit;
+  justify-content: space-between;
   transform: translateY(-50%);
 }
 
 .slider__control_left {
   left: 0;
-  padding-left: 40px;
 }
 
 .slider__control_right {
   right: 0;
-  padding-right: 40px;
 }
 
 .slider__control::before {
