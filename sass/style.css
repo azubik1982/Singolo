@@ -50,6 +50,7 @@ ul {
 .wrapper {
   max-width: 1020px;
   margin: auto;
+  position: relative;
 }
 
 body {
