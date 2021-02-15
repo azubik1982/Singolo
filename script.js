@@ -7,7 +7,26 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
-// // menu-navigation-scrolling function
+// menu-navigation-scrolling function
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+  const curPos = window.scrollY;
+  const divs = document.querySelectorAll('.wrapper>div');
+  const links = document.querySelectorAll('#MENU a');
+
+  divs.forEach((el) => {
+    if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+      links.forEach((a) => {
+        a.classList.remove('active');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active');
+        }
+      })
+    }
+  });
+}
 
 // jQuery(window).scroll(function(){
 //     var $sections = $('section');
@@ -51,8 +70,11 @@ PORTFOLIO.addEventListener('click', (event) => {
   }
 });
 
+
+
 // slider-skript
 
+'use strict';
 var multiItemSlider = (function () {
 
   function _isElementVisible(element) {
@@ -92,10 +114,10 @@ var multiItemSlider = (function () {
         { active: false, minWidth: 980, count: 2 }
       ],
       _config = {
-        // isCycling: false, // автоматическая смена слайдов
-        direction: 'right', // направление смены слайдов
-       interval: 5000, // интервал между автоматической сменой слайдов
-        pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+        isCycling: true, // автоматическая смена слайдов
+        //direction: 'right', // направление смены слайдов
+        //interval: 5000, // интервал между автоматической сменой слайдов
+        //pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
       };
 
     for (var key in config) {
