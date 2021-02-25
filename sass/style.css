@@ -61,7 +61,7 @@ body {
 
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -156,6 +156,10 @@ body {
 .svg:hover {
   filter: inherit;
   fill: #DEDEDE;
+}
+
+#home {
+  padding-top: 89px;
 }
 
 .portfolio {
@@ -352,11 +356,11 @@ body {
 }
 
 .slider__control_left {
-  left: 31%;
+  left: 5%;
 }
 
 .slider__control_right {
-  right: 31%;
+  right: 5%;
 }
 
 .slider__control::before {
