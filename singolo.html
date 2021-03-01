@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
 </head>
-<body>
+<body id="home">
   <header class="header">
     <div class="wrapper header__wrapper">
       <div class="site_name_wrapper">
@@ -19,44 +19,41 @@
               <a class="active" href="#home">HOME</a>
             </li>
             <li class="navigation__link">
-              <a href="#SERVICES">SERVICES</a>
+              <a href="#services">SERVICES</a>
             </li>
             <li class="navigation__link">
-              <a href="#PORTFOLIO">PORTFOLIO</a>
+              <a href="#portfolio">PORTFOLIO</a>
             </li>
             <li class="navigation__link">
               <a href="#about">ABOUT</a>
             </li>
             <li class="navigation__link">
-              <a href="#CONTACT">CONTACT</a>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
       </nav>
     </div>
   </header>
-  <main>
-    <section id="home">
-      <div class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__item">
-            <div class="slide-1">
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="slide-2">
-            </div>
-          </div>
+    <section id="slider">
+      <div class="slider-container">
+        <div class="carousel-slides">
+          <img  id="lastClone" src="img/slide-2/Slide-2.svg" alt="2 phones" class="slide">
+          <img src="img/slide-1/Slide-1.svg" alt="2 phones" class="slide">
+          <img src="img/slide-2/Slide-2.svg" alt="3 phones" class="slide">
+          <img  id="firstClone" src="img/slide-1/Slide-1.svg" alt="3 phones" class="slide">
         </div>
-          <a class="slider__control slider__control_left" href="#" role="button"></a>
-          <a class="slider__control slider__control_right" href="#" role="button"></a>
+        <div class="btn-container">
+          <a class="btn" href="#" id="left"></a>
+          <a class="btn" href="#" id="right"></a>
+        </div>
       </div>
     </section>
     <section id="services">
-      <div class="our-services" >
+      <div class="services" >
         <div class="wrapper our-services__wrapper" >
-          <div id="SERVICES">
-                <h2 class="our-service__title">Our Services</h2>
-                <p class="our-service__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <div>
+            <h2 class="our-service__title">Our Services</h2>
+            <p class="our-service__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
           <div class="wrapper layout-2-span-3-column__wrapper" >
                   <div class="wrapper_layout">
