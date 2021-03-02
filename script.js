@@ -1,9 +1,9 @@
-const MENU = document.getElementById('MENU');
+const menu = document.getElementById('nav-menu');
 
 // menu-navigation
 
-MENU.addEventListener('click', (event) => {
-    MENU.querySelectorAll('#MENU a').forEach(el => el.classList.remove('active'));
+menu.addEventListener('click', (event) => {
+  menu.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
 });
 
