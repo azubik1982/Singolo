@@ -11,11 +11,9 @@
 
 
 // // menu-navigation-scrolling function // Делал по лекции 2 (17 марта)
-// const menu = document.getElementById('nav-menu');
+const menu = document.getElementById('nav-menu');
 const navMenuLincs = document.querySelectorAll('#nav-menu a'); //выбираем ссылки из меню-навигации -- Работает выводит 5 ссылок
 const menuLink = document.querySelectorAll('.menu-link'); //выбираем элементы с классом меню-линк (якоря) -- Работает выводит 3 элемента
-console.log(querySelectorAll('.menu-link'));
-
 
 document.addEventListener('scroll', onScroll);
 
