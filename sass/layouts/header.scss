@@ -50,25 +50,26 @@
     text-align: right;
     letter-spacing: -0.035em;
     transition: all 0.3s;
-    a {
-        display: block;
-        text-decoration: none;
-        color: $color-white;
-        cursor: pointer;
-    }
-
-    a.active {
-        color: #f06c64;
-    }
-
-    a:not(.active):hover {
-        color:  #f06c64;
-    }
-
-    a:target {
-        color: #f06c64;
-    }
 }
+
+a {
+    // display: block;
+    text-decoration: none;
+    color: $color-white;
+    // cursor: pointer;
+}
+
+.active {
+    color: #f06c64;
+}
+
+a:not(.active):hover {
+    color:  #f06c64;
+}
+
+// a:target {
+//     color: #f06c64;
+// }
 
 .navigation :first-child {
     list-style: none;

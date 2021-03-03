@@ -60,6 +60,7 @@ body {
   margin-right: 0;
   margin-bottom: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -113,19 +114,17 @@ body {
   letter-spacing: -0.035em;
   transition: all 0.3s;
 }
-.navigation a {
-  display: block;
+
+a {
   text-decoration: none;
   color: #FFFFFF;
-  cursor: pointer;
 }
-.navigation a.active {
+
+.active {
   color: #f06c64;
 }
-.navigation a:not(.active):hover {
-  color: #f06c64;
-}
-.navigation a:target {
+
+a:not(.active):hover {
   color: #f06c64;
 }
 
@@ -297,12 +296,13 @@ body {
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
+  margin-bottom: -4px;
   overflow: hidden;
 }
 
 .slider-line {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   transition: all ease 0.5s;
 }
 

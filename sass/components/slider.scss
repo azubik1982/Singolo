@@ -1,6 +1,5 @@
 // Styles for Slider-block
 #slider {
-  // margin-top: 77px;
   background: $color-bg-slider1;
 }
 
@@ -8,12 +7,13 @@
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
+  margin-bottom: -4px; // Обрезал контейнер - т.к. картинки - не одинаковые по высоте
   overflow: hidden;
 }
 
 .slider-line {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   transition: all ease .5s;
 }
 
