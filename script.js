@@ -1,12 +1,12 @@
-// // menu-navigation // Делел по 1-й лекции Сергея Шаляпина
+// // // menu-navigation // Делел по 1-й лекции Сергея Шаляпина
+// const menu = document.getElementById('nav-menu');
+// const navMenuLincs = document.querySelectorAll('#nav-menu a');
 
-const menu = document.getElementById('nav-menu');
-const navMenuLincs = document.querySelectorAll('#nav-menu a');
 
-menu.addEventListener('click', (event) => {
-  menu.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
-});
+// menu.addEventListener('click', (event) => {
+//   menu.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
+//     event.target.classList.add('active');
+// });
 
 
 
@@ -15,7 +15,6 @@ menu.addEventListener('click', (event) => {
 
 
 document.addEventListener('scroll', onScroll);
-
 function onScroll(eventScroll) {
     // console.log(eventScroll); // работает
   const curPos = window.scrollY;
@@ -29,10 +28,8 @@ function onScroll(eventScroll) {
       // console.log(elMenuId);
       //  debugger;
       // elMenuId.getAttribute('id'); // - выводит id элементов - работает
-
-
-      if (elMenuId.offsetTop - 77 <= curPos && (elMenuId.offsetTop + elMenuId.offsetHeight) - 77 > curPos) {
-        navMenuLincs.forEach((a) => {
+       if (elMenuId.offsetTop - 77 <= curPos && (elMenuId.offsetTop + elMenuId.offsetHeight) - 77 > curPos){
+          navMenuLincs.forEach((a) => {
           a.classList.remove('active');
           if (elMenuId.getAttribute('id') === a.getAttribute('href').substring(1)) {
             a.classList.add('active');
@@ -42,9 +39,7 @@ function onScroll(eventScroll) {
     });
 }
 
-
 // menu-portfolio
-
 PORTFOLIO.addEventListener('click', (eventClick) => {
   if (eventClick.target.classList.contains("button_borderd")) {
       PORTFOLIO.querySelectorAll('button').forEach(el => el.classList.remove('button_borderd_active'));
@@ -56,72 +51,63 @@ PORTFOLIO.addEventListener('click', (eventClick) => {
 
 
 
-// slider-skript // -- не работает
+// slider-skript // -- работает
 
-const images = document.querySelectorAll('.slider .slider-line img');
-const sliderLine = document.querySelector('.slider-line');
-let count = 1;
+const images = document.querySelectorAll('.slider .slider-line img'); //take all images in slider-section
+const sliderLine = document.querySelector('.slider-line');             //take all images-array
+let count = 1; //number of active slide
 let width;
 
-//set- height size for slider item
+//set- width-height size of slider item for working-place
 
 function init(){
   // console.log('resize');
-  width = document.querySelector('.slider').offsetWidth;
-  sliderLine.style.width = width * images.length + 'px';
+  width = document.querySelector('.slider').offsetWidth; //find a width of slider-block from working-place
+  sliderLine.style.width = width * images.length + 'px'; //find the length of images-array
   images.forEach( item => {
-    item.style.width = width + 'px'; //
-    item.style.height = 'auto'; //add height = auto - for item, for work addaptive
+    item.style.width = width + 'px';                     //do the width of image - for slider-block
+    item.style.height = 'auto';                          //add height = auto - for item, for work addaptive
   });
   rollSlider();
   // console.log(width);
 }
 
-window.addEventListener('resize' , init); //start init-function when resize-happens
+window.addEventListener('resize' , init);               //start init-function when resize-happens
 init();
 
+//scroll images-in slider block
+
 document.querySelector('.slider_right').addEventListener('click' , function() {
-  count--;
-  if (count < 0) {
-    count = images.length - 1;
-  }
+  sliderLine.style.transition = "transform .5s ease-in-out";
+  var max = images.length;
+  count <= 0 ? false : count--;
+
   rollSlider();
+  jump();
 });
 
 
 document.querySelector('.slider_left').addEventListener('click' , function() {
-  count++;
-  if (count >= images.length) {
-    count = 0;
-  }
+  sliderLine.style.transition = "transform .5s ease-in-out";
+  var max = images.length;
+  count >= max - 1 ? false : count++;
+
   rollSlider();
+  jump();
 });
 
+//move - slide-function
 function rollSlider(){
   sliderLine.style.transform = 'translate(-'+count*width + 'px)';
+};
+
+//jump for do hide-adding of images in slider
+
+function jump() {
+  sliderLine.addEventListener('transitionend', function(){
+    images[count].id === "first_clone" ? count = 1 : count;
+    images[count].id === "last_clone" ? count = images.length - 2 : count;
+    sliderLine.style.transition = "none";
+    rollSlider()
+  });
 }
-
-
-// (function () {
-
-//   var doc = document,
-//       index = 1;
-
-//   var Slider = function () {
-//       this.box = doc.querySelector('.slider');
-//       this.slidesBox = doc.querySelectorAll('.slider-line');
-//       this.slides = doc.querySelectorAll('.slide');
-//       this.btns = doc.querySelectorAll('.btn');
-//       this.size = this.box.clientWidth;
-
-//       this.position();
-//   };
-
-//   Slider.prototype.position = function () {
-//       var size = this.size;
-//       this.slidesBox.style.transform = 'translateX(' + (- index * size) + 'px)';
-//   };
-
-//   new Slider ();
-
-// })();
