@@ -1,9 +1,11 @@
 // Styles for Slider-block
-#slider {
-  background: $color-bg-slider1;
+#home {
+//   padding-top: 77px;
+  scroll-padding-top: 77px;
 }
 
 .slider-container {
+  background: $color-bg-slider1;
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
@@ -37,6 +39,14 @@
   width: 90px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.btn:not(.active):hover {
+  height: 30px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: $color-primary;
 }
 
 #left {

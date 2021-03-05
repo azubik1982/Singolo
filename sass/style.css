@@ -2,6 +2,8 @@
 html {
   font-family: "Lato", sans-serif;
   font-size: 10px;
+  padding-top: 77px;
+  scroll-padding-top: 77px;
 }
 
 body {
@@ -55,10 +57,7 @@ ul {
 
 body {
   background-color: ​ #f2f2f2;
-  margin-top: 77px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   padding: 0;
   scroll-behavior: smooth;
 }
@@ -183,7 +182,8 @@ a:not(.active):hover {
   outline: 0;
   outline-offset: 0;
 }
-.button_portfolio .button_borderd {
+
+.button_borderd {
   list-style: none;
   font-family: "Lato", sans-serif;
   color: #767e9e;
@@ -193,7 +193,8 @@ a:not(.active):hover {
   background-color: #2d303a;
   cursor: pointer;
 }
-.button_portfolio .button_borderd_active {
+
+.button_borderd_active {
   list-style: none;
   color: #DEDEDE;
   border: 1px solid #DEDEDE;
@@ -202,11 +203,12 @@ a:not(.active):hover {
   background-color: #2d303a;
   cursor: pointer;
 }
-.button_portfolio .button_borderd_active :active, .button_portfolio .button_borderd_active :hover, .button_portfolio .button_borderd_active :focus {
+.button_borderd_active :active, .button_borderd_active :hover, .button_borderd_active :focus {
   outline: 0;
   outline-offset: 0;
 }
-.button_portfolio .button_borderd:not(.active):hover {
+
+.button_borderd:not(.active):hover {
   color: #DEDEDE;
   border: 1px solid #DEDEDE;
 }
@@ -288,11 +290,12 @@ a:not(.active):hover {
   justify-content: space-between;
 }
 
-#slider {
-  background: #f06c64;
+#home {
+  scroll-padding-top: 77px;
 }
 
 .slider-container {
+  background: #f06c64;
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
@@ -324,6 +327,14 @@ a:not(.active):hover {
   width: 90px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.btn:not(.active):hover {
+  height: 30px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: ​ #f2f2f2;
 }
 
 #left {

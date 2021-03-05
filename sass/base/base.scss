@@ -1,11 +1,15 @@
 html {
     font-family: 'Lato', sans-serif;
     font-size: 10px;
+    padding-top: 77px; //отступ для плашки
+    scroll-padding-top: 77px;
 }
 
 body {
     font-size: 1.6rem;
     color: #767e9e;
+    // padding-top: 77px; //отступ для плашки - из body - не работает
+    // scroll-padding-top: 77px;  //
 }
 
 h1 {

@@ -20,7 +20,9 @@
     padding: 10px 0;
     display: flex;
     :active,:hover,:focus{outline:0;outline-offset:0}  //off- all buttons browser-styles
-    .button_borderd {
+}
+
+.button_borderd {
     list-style: none;
     font-family: 'Lato', sans-serif;
     color: $color-border;
@@ -29,9 +31,9 @@
     border-radius: 5px;
     background-color: $color-bg-portfolio;
     cursor: pointer;
-    }
+}
 
-    .button_borderd_active {
+.button_borderd_active {
     :active,:hover,:focus{outline:0;outline-offset:0}
     list-style: none;
     color: $color-border-hover;
@@ -40,15 +42,12 @@
     border-radius: 5px;
     background-color: $color-bg-portfolio;
     cursor: pointer;
-    }
-
-    .button_borderd:not(.active):hover {
-    color: $color-border-hover;
-    border: 1px solid $color-border-hover;
-    }
-
 }
 
+.button_borderd:not(.active):hover {
+    color: $color-border-hover;
+    border: 1px solid $color-border-hover;
+}
 
 .button_portfolio__item {
     :active,:hover,:focus{outline:0;outline-offset:0}  //off- all buttons browser-styles

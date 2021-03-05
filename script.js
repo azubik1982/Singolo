@@ -31,7 +31,7 @@ function onScroll(eventScroll) {
       // elMenuId.getAttribute('id'); // - выводит id элементов - работает
 
 
-      if (elMenuId.offsetTop <= curPos && (elMenuId.offsetTop + elMenuId.offsetHeight) > curPos) {
+      if (elMenuId.offsetTop - 77 <= curPos && (elMenuId.offsetTop + elMenuId.offsetHeight) - 77 > curPos) {
         navMenuLincs.forEach((a) => {
           a.classList.remove('active');
           if (elMenuId.getAttribute('id') === a.getAttribute('href').substring(1)) {
