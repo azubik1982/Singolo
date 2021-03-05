@@ -291,11 +291,10 @@ a:not(.active):hover {
 }
 
 #home {
-  scroll-padding-top: 77px;
+  background: #f06c64;
 }
 
-.slider-container {
-  background: #f06c64;
+.slider {
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
@@ -317,24 +316,27 @@ a:not(.active):hover {
   align-items: center;
   justify-content: space-between;
   height: 30px;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   opacity: 0.5;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .btn {
   height: 30px;
-  width: 90px;
+  width: 30px;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.btn:not(.active):hover {
-  height: 30px;
-  width: 90px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background: ​ #f2f2f2;
+.btn:hover {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 3px solid #DEDEDE;
+  transition: all ease 0.5s;
 }
 
 #left {

@@ -1,11 +1,9 @@
 // Styles for Slider-block
 #home {
-//   padding-top: 77px;
-  scroll-padding-top: 77px;
+  background: $color-bg-slider1;
 }
 
-.slider-container {
-  background: $color-bg-slider1;
+.slider {
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
@@ -29,24 +27,30 @@
   align-items: center;
   justify-content: space-between;
   height: 30px;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   opacity: 0.5;
-  background: rgba(0, 0, 0, .5);
+  // background: rgba(0, 0, 0, .5);
 }
 
 .btn {
   height: 30px;
-  width: 90px;
+  width: 30px;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 5px;
+  cursor: pointer;
+
+
 }
 
-.btn:not(.active):hover {
-  height: 30px;
-  width: 90px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background: $color-primary;
+.btn:hover {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 3px solid $color-border-hover;
+  transition: all ease .5s;
 }
 
 #left {

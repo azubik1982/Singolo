@@ -1,12 +1,12 @@
 // // menu-navigation // Делел по 1-й лекции Сергея Шаляпина
 
-// const menu = document.getElementById('nav-menu');
-// const navMenuLincs = document.querySelectorAll('#nav-menu a');
+const menu = document.getElementById('nav-menu');
+const navMenuLincs = document.querySelectorAll('#nav-menu a');
 
-// menu.addEventListener('click', (event) => {
-//   menu.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
-//     event.target.classList.add('active');
-// });
+menu.addEventListener('click', (event) => {
+  menu.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+});
 
 
 
@@ -56,7 +56,51 @@ PORTFOLIO.addEventListener('click', (eventClick) => {
 
 
 
-// // slider-skript // -- не работает
+// slider-skript // -- не работает
+
+const images = document.querySelectorAll('.slider .slider-line img');
+const sliderLine = document.querySelector('.slider-line');
+let count = 1;
+let width;
+
+//set- height size for slider item
+
+function init(){
+  // console.log('resize');
+  width = document.querySelector('.slider').offsetWidth;
+  sliderLine.style.width = width * images.length + 'px';
+  images.forEach( item => {
+    item.style.width = width + 'px'; //
+    item.style.height = 'auto'; //add height = auto - for item, for work addaptive
+  });
+  rollSlider();
+  // console.log(width);
+}
+
+window.addEventListener('resize' , init); //start init-function when resize-happens
+init();
+
+document.querySelector('.slider_right').addEventListener('click' , function() {
+  count--;
+  if (count < 0) {
+    count = images.length - 1;
+  }
+  rollSlider();
+});
+
+
+document.querySelector('.slider_left').addEventListener('click' , function() {
+  count++;
+  if (count >= images.length) {
+    count = 0;
+  }
+  rollSlider();
+});
+
+function rollSlider(){
+  sliderLine.style.transform = 'translate(-'+count*width + 'px)';
+}
+
 
 // (function () {
 
@@ -64,7 +108,7 @@ PORTFOLIO.addEventListener('click', (eventClick) => {
 //       index = 1;
 
 //   var Slider = function () {
-//       this.box = doc.querySelector('.slider-container');
+//       this.box = doc.querySelector('.slider');
 //       this.slidesBox = doc.querySelectorAll('.slider-line');
 //       this.slides = doc.querySelectorAll('.slide');
 //       this.btns = doc.querySelectorAll('.btn');
