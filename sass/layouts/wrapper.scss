@@ -1,5 +1,21 @@
 .wrapper {
-    max-width: 936px;
+    max-width: $content-width;
     margin: auto;
-    position: relative;
-}
+
+    @include media-laptop {
+      padding: 0 40px;
+    }
+
+    @include media-tablet {
+      padding: 0 40px;
+    }
+
+    @include media-mobile {
+      padding: 0 30px;
+    }
+
+  }
+
+  .header__wrapper {
+
+  }
