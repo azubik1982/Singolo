@@ -40,14 +40,26 @@ function onScroll(eventScroll) {
 }
 
 // menu-portfolio
-PORTFOLIO.addEventListener('click', (eventClick) => {
+portfolio.addEventListener('click', (eventClick) => {
   if (eventClick.target.classList.contains("button_borderd")) {
-      PORTFOLIO.querySelectorAll('button').forEach(el => el.classList.remove('button_borderd_active'));
+    portfolio.querySelectorAll('button').forEach(el => el.classList.remove('button_borderd_active'));
       if (eventClick.target.classList.contains("button_borderd")) {
           eventClick.target.classList.add('button_borderd_active');
       }
   }
+
+// var parent = document.getElementById("shuffle");
+// console.log('parent');
+// var divs = parent.children;
+// var frag = document.createDocumentFragment();
+// while (divs.length) {
+//     frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
+// }
+// parent.appendChild(frag);
 });
+
+
+//
 
 
 

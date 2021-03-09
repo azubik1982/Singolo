@@ -24,3 +24,9 @@
     filter: inherit;
     fill: $color-border-hover;
 }
+
+.copyright {
+    @include media-mobile {
+        display: none;
+    }
+}
