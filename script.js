@@ -39,7 +39,7 @@ function onScroll(eventScroll) {
     });
 }
 
-// menu-portfolio
+// menu-portfolio- click-styles
 portfolio.addEventListener('click', (eventClick) => {
   if (eventClick.target.classList.contains("button_borderd")) {
     portfolio.querySelectorAll('button').forEach(el => el.classList.remove('button_borderd_active'));
@@ -48,18 +48,28 @@ portfolio.addEventListener('click', (eventClick) => {
       }
   }
 
-// var parent = document.getElementById("shuffle");
-// console.log('parent');
-// var divs = parent.children;
-// var frag = document.createDocumentFragment();
-// while (divs.length) {
-//     frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
-// }
-// parent.appendChild(frag);
-});
+}
+
+);
+
+// shufle portfolio images
+
+var parent = document.getElementById("shufle");
+//  console.log(parent);
+ var imgs = parent.children;
+//  console.log(imgs);
+// Create a document fragment to hold the shuffled elements
+ var frag = document.createDocumentFragment();
+// Loop until every element is moved out of the parent and into the document fragment
+ while (imgs.length) {
+   // select one random child element and move it into the document fragment
+      frag.appendChild(imgs[Math.floor(Math.random() * imgs.length)]);
+  }
+// appending the document fragment appends all the elements, in the shuffled order
+ parent.appendChild(frag);
 
 
-//
+
 
 
 
@@ -77,8 +87,10 @@ function init(){
   width = document.querySelector('.slider').offsetWidth; //find a width of slider-block from working-place
   sliderLine.style.width = width * images.length + 'px'; //find the length of images-array
   images.forEach( item => {
-    item.style.width = width + 'px';                     //do the width of image - for slider-block
-    item.style.height = 'auto';                          //add height = auto - for item, for work addaptive
+    //do the width of image - for slider-block
+    item.style.width = width + 'px';
+    //add height = auto - for item, for work addaptive
+    item.style.height = 'auto';
   });
   rollSlider();
   // console.log(width);
