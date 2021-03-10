@@ -89,7 +89,7 @@ init();
 
 //scroll images-in slider block
 
-document.querySelector('.slider_right').addEventListener('click' , function() {
+document.querySelector('.slider_left').addEventListener('click' , function() {
   sliderLine.style.transition = "transform .5s ease-in-out";
   var max = images.length;
   count <= 0 ? false : count--;
@@ -99,7 +99,7 @@ document.querySelector('.slider_right').addEventListener('click' , function() {
 });
 
 
-document.querySelector('.slider_left').addEventListener('click' , function() {
+document.querySelector('.slider_right').addEventListener('click' , function() {
   sliderLine.style.transition = "transform .5s ease-in-out";
   var max = images.length;
   count >= max - 1 ? false : count++;

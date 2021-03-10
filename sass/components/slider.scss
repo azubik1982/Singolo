@@ -9,6 +9,9 @@
   margin: 0 auto;
   margin-bottom: -4px; // Cut "slider-container" (because slider-images are different heights for 4px)
   overflow: hidden;
+  @include media-mobile {
+    margin-top: -6px;
+  }
 }
 
 .slider-line {
@@ -32,6 +35,13 @@
   margin-right: 5%;
   opacity: 0.5;
   // background: rgba(0, 0, 0, .5);
+
+  @include media-mobile {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
 }
 
 .btn {

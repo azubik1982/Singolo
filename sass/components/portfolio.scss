@@ -2,6 +2,9 @@
     background-attachment: contain;
     background-color: $color-bg-portfolio;
     border-bottom: 6px solid $color-border-blue;
+    @include media-mobile {
+        border-bottom: none;
+    }
 }
 
 .portfolio__title {
@@ -62,13 +65,17 @@
     height: auto;
     padding-bottom: 68px;
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     @include media-tablet {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 19.5px;
         height: auto;
         padding-bottom: 46px;
-
     }
 
     @include media-mobile {
@@ -76,20 +83,26 @@
         grid-template-columns: 1fr 1fr;
         gap: 13px;
         height: auto;
-        padding-bottom: 46px;
+        padding-bottom: 42px;
     }
+}
 
+//for hide overflow - portfolio-section in desctop and tablet - resolution
 
+.portfolio_images img:nth-child(1n+13) {
+    display: none;
+  }
+
+//for hide overflow - portfolio-section in mobile - resolution
+
+.portfolio_images img:nth-child(1n+9) {
+    @include media-mobile {
+    display: none;
+    }
 }
 
 
-.image {
-    display: block; // for place image in div without margin/padding
-    line-height: 0; // for delete margin-for alt text (*of img in div)
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-}
+// .image {
+//     display: block; // for place image in div without margin/padding
+//     line-height: 0; // for delete margin-for alt text (*of img in div)
+// }
