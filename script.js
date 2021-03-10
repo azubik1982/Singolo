@@ -1,4 +1,4 @@
-// // // menu-navigation // Делел по 1-й лекции Сергея Шаляпина
+// menu-navigation // Делел по 1-й лекции Сергея Шаляпина
 // const menu = document.getElementById('nav-menu');
 // const navMenuLincs = document.querySelectorAll('#nav-menu a');
 
@@ -8,20 +8,19 @@
 //     event.target.classList.add('active');
 // });
 
-
-
-// // menu-navigation-scrolling function // Делал по лекции 2 Сергея Шаляпина (от 17 марта)
+// menu-navigation-scrolling function // Делал по лекции 2 Сергея Шаляпина (от 17 марта)
 // const menu = document.getElementById('nav-menu');
 
 
 document.addEventListener('scroll', onScroll);
-function onScroll(eventScroll) {
-    // console.log(eventScroll); // работает
-  const curPos = window.scrollY;
-    // console.log(curPos); // работает
 
-  const menuLink = document.querySelectorAll('.menu-link'); //выбираем элементы с классом меню-линк (якоря) -- Работает выводит 3 элемента
-  const navMenuLincs = document.querySelectorAll('#nav-menu a'); //выбираем ссылки из меню-навигации -- Работает выводит 5 ссылок
+function onScroll(eventScroll) {
+    // console.log(eventScroll);
+  const curPos = window.scrollY;
+    // console.log(curPos);
+
+  const menuLink = document.querySelectorAll('.menu-link'); //find elements with class "menu-links"
+  const navMenuLincs = document.querySelectorAll('#nav-menu a'); //find links tag "a" from navigation menu
 
   // Для элемнтов с классом меню-линк, хочу вывести их id - работает
   menuLink.forEach((elMenuId) => {
@@ -39,7 +38,8 @@ function onScroll(eventScroll) {
     });
 }
 
-// menu-portfolio- click-styles
+
+// menu-portfolio- button-click styles-change
 portfolio.addEventListener('click', (eventClick) => {
   if (eventClick.target.classList.contains("button_borderd")) {
     portfolio.querySelectorAll('button').forEach(el => el.classList.remove('button_borderd_active'));
@@ -47,12 +47,10 @@ portfolio.addEventListener('click', (eventClick) => {
           eventClick.target.classList.add('button_borderd_active');
       }
   }
-
 }
-
 );
 
-// shufle portfolio images
+// shufle portfolio images - when click
 
 var parent = document.getElementById("shufle");
 //  console.log(parent);
@@ -60,17 +58,17 @@ var parent = document.getElementById("shufle");
 //  console.log(imgs);
 // Create a document fragment to hold the shuffled elements
  var frag = document.createDocumentFragment();
+
+//do function who happens when has click-on portfolio buttons
+portfolio.addEventListener('click', (eventShufl) =>{
 // Loop until every element is moved out of the parent and into the document fragment
  while (imgs.length) {
    // select one random child element and move it into the document fragment
       frag.appendChild(imgs[Math.floor(Math.random() * imgs.length)]);
   }
 // appending the document fragment appends all the elements, in the shuffled order
- parent.appendChild(frag);
-
-
-
-
+parent.appendChild(frag);
+});
 
 
 // slider-skript // -- работает
