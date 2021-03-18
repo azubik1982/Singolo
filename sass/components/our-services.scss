@@ -50,6 +50,13 @@
         padding-bottom: 46px;
     }
 
+    @include media-mobile-max {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
     @include media-mobile {
         display: grid;
         grid-template-columns: 1fr;

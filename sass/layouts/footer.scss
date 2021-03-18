@@ -23,12 +23,23 @@
 }
 
 .ico-networks__link {
+    display: flex;
     padding-right: 8px;
+
 }
 
-.svg:hover {
-    filter: inherit;
-    fill: $color-border-hover;
+.ico-networks__link:last-child {
+    padding: 0;
+}
+
+.svg{
+    transition:  0.8s;
+}
+
+:hover.svg {
+    // filter: invert(90%);
+    filter: brightness(1.5);
+
 }
 
 .copyright {

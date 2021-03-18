@@ -6,6 +6,14 @@
     @media (max-width: $tablet-width) { @content; }
 }
 
+@mixin media-tablet-min {
+    @media (max-width: $tablet-width-min) { @content; }
+}
+
+@mixin  media-mobile-max {
+    @media (max-width: $mobile-width-max) { @content; }
+}
+
 @mixin  media-mobile {
     @media (max-width: $mobile-width) { @content; }
 }
