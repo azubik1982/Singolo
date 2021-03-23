@@ -1,10 +1,8 @@
 // menu-navigation // Делел по 1-й лекции Сергея Шаляпина
-// const menu = document.getElementById('nav-menu');
-// const navMenuLincs = document.querySelectorAll('#nav-menu a');
+// const menuNav = document.getElementById('nav-menu');
 
-
-// menu.addEventListener('click', (event) => {
-//   menu.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
+// menuNav.addEventListener('click', (event) => {
+//   menuNav.querySelectorAll('#nav-menu a').forEach(el => el.classList.remove('active'));
 //     event.target.classList.add('active');
 // });
 
@@ -27,13 +25,13 @@ function onScroll(eventScroll) {
       // console.log(elMenuId);
       //  debugger;
       // elMenuId.getAttribute('id'); // - выводит id элементов - работает
-       if (elMenuId.offsetTop - 77 <= curPos && (elMenuId.offsetTop + elMenuId.offsetHeight) - 77 > curPos){
+       if (elMenuId.offsetTop - document.querySelector('header').offsetHeight <= curPos && (elMenuId.offsetTop + elMenuId.offsetHeight) - document.querySelector('header').offsetHeight > curPos){
           navMenuLincs.forEach((a) => {
           a.classList.remove('active');
           if (elMenuId.getAttribute('id') === a.getAttribute('href').substring(1)) {
             a.classList.add('active');
           }
-        })
+        });
       }
     });
 }
@@ -133,3 +131,11 @@ function jump() {
     rollSlider()
   });
 }
+
+
+//burger-menu
+
+const burgerMenu = document.querySelector('.hamburger');
+burgerMenu.addEventListener('click', function(){
+  burgerMenu.parentElement.parentElement.classList.toggle('__clickBrg');
+} )
