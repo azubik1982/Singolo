@@ -3,6 +3,7 @@ html {
     font-size: 10px;
     padding-top: 71px; // отступ для плашки, из боди - не работает!!!!!
     scroll-padding-top: 71px; // сдвиг скрола для плашки
+    scroll-behavior: smooth;
 }
 
 body {

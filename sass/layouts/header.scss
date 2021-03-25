@@ -135,14 +135,13 @@
     letter-spacing: -0.035em;
     transition: all 0.3s;
 
-    a {
-    // display: block;
+    a  {
+    display: block;
     text-decoration: none;
     color: $color-white;
-    // cursor: pointer;
     }
 
-    .active {
+    a.active {
     color: #f06c64;
     }
 
@@ -209,12 +208,13 @@
 
 
     .site_name_wrapper{
+        margin-bottom: 70px;
     }
 
     .header__navigation {
         display: block;
-        margin-top: 80px;
-        margin-bottom: 67px;
+        margin-bottom: 160%;
+        margin-top: 0;
     }
 
     .navigation {

@@ -30,6 +30,8 @@ function onScroll(eventScroll) {
           a.classList.remove('active');
           if (elMenuId.getAttribute('id') === a.getAttribute('href').substring(1)) {
             a.classList.add('active');
+            burgerMenu.parentElement.parentElement.classList.remove('__clickBrg');
+            document.body.classList.remove('_lock');
           }
         });
       }
@@ -134,8 +136,9 @@ function jump() {
 
 
 //burger-menu
-
+const navMenuLincs = document.querySelectorAll('#nav-menu a');
 const burgerMenu = document.querySelector('.hamburger');
 burgerMenu.addEventListener('click', function(){
   burgerMenu.parentElement.parentElement.classList.toggle('__clickBrg');
-} )
+  document.body.classList.toggle('_lock');
+})

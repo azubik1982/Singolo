@@ -4,6 +4,7 @@ html {
   font-size: 10px;
   padding-top: 71px;
   scroll-padding-top: 71px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,6 +75,10 @@ body {
   margin: 0 auto;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+body._lock {
+  overflow: hidden;
 }
 
 .header {
@@ -196,10 +201,11 @@ body {
   transition: all 0.3s;
 }
 .navigation a {
+  display: block;
   text-decoration: none;
   color: #FFFFFF;
 }
-.navigation .active {
+.navigation a.active {
   color: #f06c64;
 }
 .navigation a:not(.active):hover {
@@ -254,10 +260,13 @@ body {
     height: 77px;
     border-bottom: none;
   }
+  .__clickBrg .site_name_wrapper {
+    margin-bottom: 70px;
+  }
   .__clickBrg .header__navigation {
     display: block;
-    margin-top: 80px;
-    margin-bottom: 67px;
+    margin-bottom: 160%;
+    margin-top: 0;
   }
   .__clickBrg .navigation {
     display: block;
