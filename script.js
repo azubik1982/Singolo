@@ -32,6 +32,11 @@ function onScroll(eventScroll) {
             a.classList.add('active');
             burgerMenu.parentElement.parentElement.classList.remove('__clickBrg');
             document.body.classList.remove('_lock');
+            document.querySelector('a.active').addEventListener('click' , function() {
+              burgerMenu.parentElement.parentElement.classList.remove('__clickBrg');
+            document.body.classList.remove('_lock');
+            });
+
           }
         });
       }
