@@ -76,12 +76,13 @@ parent.appendChild(frag);
 });
 
 
-// slider-skript // -- работает
+// slider-skript // -- work
 
 const images = document.querySelectorAll('.slider .slider-line img'); //take all images in slider-section
 const sliderLine = document.querySelector('.slider-line');             //take all images-array
 let count = 1; //number of active slide
 let width;
+let _bckGr1;
 
 //set- width-height size of slider item for working-place
 
@@ -137,6 +138,14 @@ function jump() {
     sliderLine.style.transition = "none";
     rollSlider()
   });
+
+//background - for slider
+  const sliderBckGr = document.querySelector('#home');
+  if (count % 2 == 0) {
+    sliderBckGr.classList.add('_bckGr2');
+  } else {
+    sliderBckGr.classList.remove('_bckGr2');
+  }
 }
 
 

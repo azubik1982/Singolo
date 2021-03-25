@@ -181,7 +181,7 @@
     padding: 0 10px;
     position: fixed;
     display: flex;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     flex-direction: column;
     width: 65%;
     height: 100%;
@@ -208,13 +208,14 @@
 
 
     .site_name_wrapper{
-        margin-bottom: 70px;
+        margin-bottom: 35%;
+        margin-top: 5%;
     }
 
     .header__navigation {
         display: block;
-        margin-bottom: 160%;
-        margin-top: 0;
+        margin-bottom: 20%;
+        margin-top: 20%;
     }
 
     .navigation {

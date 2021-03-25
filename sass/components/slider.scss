@@ -1,6 +1,12 @@
 // Styles for Slider-block
-#home {
+.slider_bckGr {
   background: $color-bg-slider1;
+  transition: all ease 0.2s;
+}
+
+._bckGr2 {
+  background: $color-bg-slider2;
+  transition: all ease 0.2s;
 }
 
 .slider {
@@ -39,9 +45,9 @@
   // background: rgba(0, 0, 0, .5);
 
   @include media-mobile {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
 }
@@ -51,15 +57,13 @@
   width: 30px;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 
   @include media-mobile {
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
   }
-
-
 }
 
 .btn:hover {
@@ -70,8 +74,8 @@
   transition: all ease .5s;
 
   @include media-mobile {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 22px;
   }
 
 }
