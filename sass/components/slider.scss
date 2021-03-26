@@ -22,6 +22,12 @@
   }
 }
 
+.slider._lock {
+  transform: none;
+  transition: none;
+  overflow: -moz-hidden-unscrollable;
+}
+
 .slider-line {
   display: flex;
   align-items: flex-end;
@@ -43,6 +49,13 @@
   margin-right: 5%;
   opacity: 0.5;
   // background: rgba(0, 0, 0, .5);
+  @include media-tablet {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+
 
   @include media-mobile {
     width: 98%;
@@ -60,10 +73,16 @@
   border-radius: 4px;
   cursor: pointer;
 
+  @include media-tablet {
+    height: 22px;
+    width: 22px;
+  }
+
   @include media-mobile {
     height: 22px;
     width: 22px;
   }
+
 }
 
 .btn:hover {
@@ -73,9 +92,15 @@
   border: 3px solid $color-border-hover;
   transition: all ease .5s;
 
+  @include media-tablet {
+    height: 25px;
+    width: 25px;
+  }
+
   @include media-mobile {
-    height: 24px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
+
   }
 
 }

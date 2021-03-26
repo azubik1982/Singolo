@@ -155,4 +155,5 @@ const burgerMenu = document.querySelector('.hamburger');
 burgerMenu.addEventListener('click', function(){
   burgerMenu.parentElement.parentElement.classList.toggle('__clickBrg');
   document.body.classList.toggle('_lock');
+  document.querySelector('.slider').classList.toggle('_lock');
 })

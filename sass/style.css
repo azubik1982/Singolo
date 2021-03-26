@@ -261,20 +261,38 @@ body._lock {
     border-bottom: none;
   }
   .__clickBrg .site_name_wrapper {
-    margin-bottom: 35%;
+    margin-bottom: 65%;
     margin-top: 5%;
   }
+}
+@media (max-width: 650px) and (max-width: 375px) {
+  .__clickBrg .site_name_wrapper {
+    margin-bottom: 90%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 650px) {
   .__clickBrg .header__navigation {
     display: block;
     margin-bottom: 20%;
     margin-top: 20%;
   }
+}
+@media (max-width: 650px) and (max-width: 375px) {
+  .__clickBrg .header__navigation {
+    margin-bottom: 90%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 650px) {
   .__clickBrg .navigation {
     display: block;
     list-style: none;
     margin: 0;
     padding: 0;
   }
+}
+@media (max-width: 650px) {
   .__clickBrg .navigation__link {
     list-style: none;
     margin: 0;
@@ -538,6 +556,12 @@ body._lock {
   }
 }
 
+.slider._lock {
+  transform: none;
+  transition: none;
+  overflow: -moz-hidden-unscrollable;
+}
+
 .slider-line {
   display: flex;
   align-items: flex-end;
@@ -557,6 +581,13 @@ body._lock {
   margin-right: 5%;
   opacity: 0.5;
 }
+@media (max-width: 768px) {
+  .btn-container {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 @media (max-width: 375px) {
   .btn-container {
     width: 98%;
@@ -573,6 +604,12 @@ body._lock {
   border-radius: 4px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .btn {
+    height: 22px;
+    width: 22px;
+  }
+}
 @media (max-width: 375px) {
   .btn {
     height: 22px;
@@ -587,10 +624,16 @@ body._lock {
   border: 3px solid #DEDEDE;
   transition: all ease 0.5s;
 }
+@media (max-width: 768px) {
+  .btn:hover {
+    height: 25px;
+    width: 25px;
+  }
+}
 @media (max-width: 375px) {
   .btn:hover {
-    height: 24px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
   }
 }
 

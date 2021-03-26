@@ -205,17 +205,28 @@
             border-bottom: none;
         }
 
-
-
     .site_name_wrapper{
-        margin-bottom: 35%;
+        margin-bottom: 65%;
         margin-top: 5%;
+
+
+        @include media-mobile {
+            margin-bottom: 90%;
+            margin-top: 5%;
+        }
     }
 
     .header__navigation {
         display: block;
         margin-bottom: 20%;
         margin-top: 20%;
+
+
+        @include media-mobile {
+            margin-bottom: 90%;
+            margin-top: 5%;
+        }
+
     }
 
     .navigation {
