@@ -13,13 +13,7 @@
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
-  margin-bottom: -4px; // Cut "slider-container" (because slider-images are different heights for 4px)
   overflow: hidden;
-
-
-  @include media-mobile {
-    margin-top: -14px;
-  }
 }
 
 .slider._lock {
@@ -48,14 +42,12 @@
   margin-left: 5%;
   margin-right: 5%;
   opacity: 0.5;
-  // background: rgba(0, 0, 0, .5);
+
   @include media-tablet {
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
   }
-
-
 
   @include media-mobile {
     width: 98%;
@@ -105,10 +97,10 @@
 
 }
 
-#left {
+.btn {
   background-image: url('../img/svg/slider-arows/arrow-left.svg');
 }
 
-#right {
-  background-image: url('../img/svg/slider-arows/arrow-right.svg');
+.btn:nth-child(2) {
+  transform: rotate(180deg);
 }

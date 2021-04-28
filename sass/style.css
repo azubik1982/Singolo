@@ -547,13 +547,7 @@ body._lock {
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
-  margin-bottom: -4px;
   overflow: hidden;
-}
-@media (max-width: 375px) {
-  .slider {
-    margin-top: -14px;
-  }
 }
 
 .slider._lock {
@@ -637,12 +631,12 @@ body._lock {
   }
 }
 
-#left {
+.btn {
   background-image: url("../img/svg/slider-arows/arrow-left.svg");
 }
 
-#right {
-  background-image: url("../img/svg/slider-arows/arrow-right.svg");
+.btn:nth-child(2) {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
