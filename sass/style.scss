@@ -1,0 +1,17 @@
+﻿//Abstracts
+@import "abstract/constants.scss";
+@import "abstract/mixins.scss";
+
+@import "base/base.scss";
+
+//Layouts
+@import "layouts/wrapper.scss";
+@import "layouts/body.scss";
+@import "layouts/header.scss";
+@import "layouts/footer.scss";
+
+
+//Components
+@import "components/portfolio.scss";
+@import "components/our-services.scss";
+@import "components/slider.scss";

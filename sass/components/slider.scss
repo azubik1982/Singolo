@@ -1,0 +1,106 @@
+// Styles for Slider-block
+.slider_bckGr {
+  background: $color-bg-slider1;
+  transition: all ease 0.2s;
+}
+
+._bckGr2 {
+  background: $color-bg-slider2;
+  transition: all ease 0.2s;
+}
+
+.slider {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider._lock {
+  transform: none;
+  transition: none;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.slider-line {
+  display: flex;
+  align-items: flex-end;
+  transition: all ease .5s;
+}
+
+// Styles for control-buttons
+
+.btn-container {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  opacity: 0.5;
+
+  @include media-tablet {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  @include media-mobile {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+}
+
+.btn {
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include media-tablet {
+    height: 22px;
+    width: 22px;
+  }
+
+  @include media-mobile {
+    height: 22px;
+    width: 22px;
+  }
+
+}
+
+.btn:hover {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 3px solid $color-border-hover;
+  transition: all ease .5s;
+
+  @include media-tablet {
+    height: 25px;
+    width: 25px;
+  }
+
+  @include media-mobile {
+    height: 25px;
+    width: 25px;
+
+  }
+
+}
+
+.btn {
+  background-image: url('../img/svg/slider-arows/arrow-left.svg');
+}
+
+.btn:nth-child(2) {
+  transform: rotate(180deg);
+}

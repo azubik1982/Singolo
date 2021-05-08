@@ -1,0 +1,49 @@
+.footer {
+    background-color: $color-bg-portfolio;
+}
+
+.footer__wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    @include media-mobile {
+        justify-content: center;
+
+    }
+}
+
+.ico-networks {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.ico-networks__link {
+    display: flex;
+    padding-right: 8px;
+
+}
+
+.ico-networks__link:last-child {
+    padding: 0;
+}
+
+.svg{
+    transition:  0.8s;
+}
+
+:hover.svg {
+    // filter: invert(90%);
+    filter: brightness(1.5);
+
+}
+
+.copyright {
+    @include media-mobile {
+        display: none;
+    }
+}

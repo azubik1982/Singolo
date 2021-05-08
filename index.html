@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singolo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="site_name_wrapper">
+        <span class="hamburger">
+          <span class="hamburger-line"></span>
+        </span>
+        <h1 class="site__name">SINGOLO <span class="star">*</span></h1>
+      </div>
+      <nav class="header__navigation">
+        <ul class="navigation" id="nav-menu">
+          <li class="navigation__link">
+            <a class="active" href="#home">HOME</a></li>
+          <li class="navigation__link">
+            <a href="#services">SERVICES</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section  class="menu-link slider_bckGr" id="home">
+    <div class="slider">
+      <div class="slider-line">
+        <img id="last_clone" class="slide"
+            src="img/slide-2/Slide-2.png">
+        <img class="slide"
+            src="img/slide-1/Slide-1.png">
+        <img class="slide"
+            src="img/slide-2/Slide-2.png">
+        <img  id="first_clone"  class="slide"
+            src="img/slide-1/Slide-1.png">
+      </div>
+      <div class="btn-container">
+        <div class="btn slider_left" id="left">
+        </div>
+        <div class="btn slider_right" id="right">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu-link" id="services">
+    <div class="services" >
+      <div class="wrapper our-services__wrapper" >
+        <div>
+          <h2 class="our-service__title">Our Services</h2>
+          <p class="our-service__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+        <div class="wrapper layout-2-span-3-column__wrapper" >
+          <div class="wrapper_layout">
+            <div class="our-services__img">
+              <img src="img/svg/items/services-item-1.svg" alt="pencil">
+            </div>
+            <div class="wrapper_layout__text">
+              <h3 class="layout__name">Custom Design</h3>
+              <p class="layout__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </div>
+          <div class="wrapper_layout">
+            <div class="our-services__img">
+              <img src="img/svg/items/services-item-2.svg" alt="lamp">
+            </div>
+            <div class="wrapper_layout__text">
+              <h3 class="layout__name">Inovative Ideas</h3>
+              <p class="layout__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            </div>
+          </div>
+          <div class="wrapper_layout">
+            <div class="our-services__img">
+              <img src="img/svg/items/services-item-3.svg" alt="heart">
+            </div>
+            <div class="wrapper_layout__text">
+              <h3 class="layout__name">Love Is The Answer</h3>
+              <p class="layout__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper_layout">
+            <div class="our-services__img">
+              <img src="img/svg/items/services-item-4.svg" alt="s-phone">
+            </div>
+            <div class="wrapper_layout__text">
+              <h3 class="layout__name">Responsive Layout</h3>
+              <p class="layout__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+            </div>
+          </div>
+          <div class="wrapper_layout">
+            <div class="our-services__img">
+              <img src="img/svg/items/services-item-5.svg" alt="answer">
+            </div>
+            <div class="wrapper_layout__text">
+              <h3 class="layout__name">24 / 7 Support</h3>
+              <p class="layout__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+            </div>
+          </div>
+          <div class="wrapper_layout">
+            <div class="our-services__img">
+              <img src="img/svg/items/services-item-6.svg" alt="star">
+            </div>
+            <div class="wrapper_layout__text">
+              <h3 class="layout__name">Feel Like A Star</h3>
+              <p class="layout__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu-link" id="portfolio">
+    <div class="wrapper portfolio">
+      <h2 class="portfolio__title">Portfolio</h2>
+      <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      <div class="button_portfolio" id="portfolio-buttons">
+        <span class="button_portfolio__item">
+          <button class="button_borderd button_borderd_active">All</button>
+        </span>
+        <span class="button_portfolio__item">
+          <button class="button_borderd">Web Design</button>
+        </span>
+        <span class="button_portfolio__item">
+          <button class="button_borderd">Graphic Design</button>
+        </span>
+        <span class="button_portfolio__item">
+          <button class="button_borderd">Artwork</button>
+        </span>
+      </div>
+      <div class="portfolio_images" id="shufle">
+        <img class="image" src="img/portfolio/portfolio-1.png" alt="boat">
+        <img class="image"src="img/portfolio/portfolio-2.png" alt="happyness">
+        <img  class="image" src="img/portfolio/portfolio-3.png" alt="space">
+        <img class="image" src="img/portfolio/portfolio-4.png" alt="robot">
+        <img class="image" src="img/portfolio/portfolio-5.png" alt="abstr-animals">
+        <img class="image" src="img/portfolio/portfolio-6.png" alt="codding">
+        <img class="image" src="img/portfolio/portfolio-7.png" alt="ufo">
+        <img class="image" src="img/portfolio/portfolio-8.png" alt="chickens">
+        <img class="image" src="img/portfolio/portfolio-9.png" alt="devil">
+        <img class="image" src="img/portfolio/portfolio-10.png" alt="lettering">
+        <img class="image" src="img/portfolio/portfolio-11.png" alt="monster">
+        <img class="image" src="img/portfolio/portfolio-12.png" alt="sadness">
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <div class="copyright">
+            <p>© Copyright 2013</p>
+          </div>
+          <div class="social" >
+            <ul class="ico-networks">
+              <li class="ico-networks__link">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img class="svg" src="img/svg/social icons/ico-facebook.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="ico-networks__link">
+                <a href="https://www.google.com/" target="_blank">
+                  <img class="svg" src="img/svg/social icons/ico-google-plus.svg" alt="google">
+                </a>
+              </li>
+              <li class="ico-networks__link">
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <img class="svg" src="img/svg/social icons/ico-linkedin.svg" alt="linkedin">
+                </a>
+              </li>
+              <li class="ico-networks__link">
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img class="svg" src="img/svg/social icons/ico-twitter.svg" alt="twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </footer>
+  <script async src="./script.js"></script>
+</body>
+</html>
